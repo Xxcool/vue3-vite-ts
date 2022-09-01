@@ -2,6 +2,8 @@
 
 使用最新的前端技术栈 Vue3、Vite3、TypeScript、NaiveUI、Pinia 和 UnoCSS
 
+## 安装使用
+
 - 克隆代码
 
 ```bash
@@ -25,6 +27,8 @@ pnpm vite
 ```bash
 pnpm build
 ```
+
+## 目录结构
 
 ```
 ├─ public
