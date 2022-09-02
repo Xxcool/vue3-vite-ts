@@ -1,14 +1,15 @@
 <template>
-	<n-notification-provider>
-		<n-message-provider>
+	<n-config-provider :theme="theme" class="h-full">
+		<native-provider>
 			<router-view />
-		</n-message-provider>
-	</n-notification-provider>
+		</native-provider>
+	</n-config-provider>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue'
-export default defineComponent({
-	name: 'App'
-})
+<script setup lang="ts">
+import { ref } from 'vue'
+import { darkTheme } from 'naive-ui'
+import type { GlobalTheme } from 'naive-ui'
+
+const theme = ref<GlobalTheme | null>(darkTheme)
 </script>

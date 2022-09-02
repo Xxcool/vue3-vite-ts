@@ -11,6 +11,8 @@ import ViteComponents from 'unplugin-vue-components/vite'
 // 自动按需引入NaiveUi组件
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 
+import DefineOptions from 'unplugin-vue-define-options/vite'
+
 // https://vitejs.dev/config/
 export default defineConfig({
 	base: '/',
@@ -22,7 +24,8 @@ export default defineConfig({
 		}),
 		ViteComponents({
 			resolvers: [NaiveUiResolver()]
-		})
+		}),
+		DefineOptions()
 	],
 	css: {
 		preprocessorOptions: {
