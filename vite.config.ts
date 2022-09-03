@@ -1,5 +1,5 @@
 import { defineConfig } from 'vite'
-import path from 'path';
+import path from 'path'
 import { setupVitePlugins } from './build'
 
 export default defineConfig({

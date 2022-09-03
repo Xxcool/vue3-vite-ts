@@ -4,9 +4,7 @@
 	"version": "0.0.0",
 	"scripts": {
 		"dev": "vite",
-		"build": "vue-tsc --noEmit && vite build",
-		"preview": "vite preview",
-		"commit": "git add . && git-cz"
+		"build": "vue-tsc --noEmit && vite build"
 	},
 	"dependencies": {
 		"pinia": "^2.0.21",
@@ -46,16 +44,5 @@
 		"vite-plugin-compression": "^0.5.1",
 		"vite-plugin-svg-icons": "^2.0.1",
 		"vue-tsc": "^0.39.5"
-	},
-	"lint-staged": {
-		"*.{js,ts,vue,jsx,tsx}": [
-			"npm run eslint"
-		],
-		"*.{js,jsx,ts,tsx,md,html,css,lees,scss,sass}": "prettier --write"
-	},
-	"config": {
-		"commitizen": {
-			"path": "@commitlint/cz-commitlint"
-		}
 	}
 }
