@@ -1,14 +1,17 @@
 import { App } from 'vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
-import { constantRoutes } from './routes/constants'
+import { constantRoutes } from './routes'
 
-const router = createRouter({
+export const router = createRouter({
 	history: createWebHashHistory(),
 	routes: constantRoutes
 })
 
-export function useAppRouter(app: App) {
+export function setupRouter(app: App) {
 	app.use(router)
 }
 
-export default router
+/** 路由名称 */
+export const routeName = (key: any) => key
+
+export * from './routes'

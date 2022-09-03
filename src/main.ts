@@ -2,12 +2,19 @@ import { createApp } from 'vue'
 import App from './App.vue'
 // 引入样式文件
 import './styles'
-import { useAppRouter } from './router'
+import { setupRouter } from './router'
+import { setupStore } from './store'
 
-function vawBoot() {
+async function setupApp() {
 	const app = createApp(App)
-	useAppRouter(app)
+
+	// 注册pinia
+	setupStore(app)
+
+	// 注册路
+	setupRouter(app)
+
 	app.mount('#app')
 }
 
-vawBoot()
+setupApp()
