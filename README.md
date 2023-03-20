@@ -1,5 +1,7 @@
 ## 说明
 
+[![Security Status](https://s.murphysec.com/badge/Xxcool/vue3-vite-ts.svg)](https://www.murphysec.com/p/Xxcool/vue3-vite-ts)
+
 使用最新的前端技术栈 Vue3、Vite3、TypeScript、NaiveUI、Pinia 和 UnoCSS
 
 ## 安装使用
